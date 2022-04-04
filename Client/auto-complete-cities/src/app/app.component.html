@@ -1,0 +1,5 @@
+<h1>Auto Complete Cities</h1>
+<input #inputCity type="text" (keyup)="searchOnKeyUp($event)"  list="ListCities"/>
+<datalist id="ListCities">
+   <option *ngFor="let sr of tempList" [value]="sr">{{sr}}</option>
+</datalist>
